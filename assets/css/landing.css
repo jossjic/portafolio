@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #dcd9cd;
+  animation: fadeIn 1s ease-in;
+}
+
+ul {
+  position: relative;
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+}
+
+ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  padding-bottom: 10%;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+ul li a svg {
+  width: 9vw;
+  height: 9vw;
+}
+
+ul:hover li a {
+  color: #0002;
+}
+
+ul li:hover a {
+  color: #000;
+  background: transparent;
+}
+
+ul li a[data-text^="Portafolio"]:before,
+ul li a[data-text^="Contacto"]:before {
+    font-size: 14vw; /* Tamaño para textos largos */
+    letter-spacing: 2vw; /* Espaciado de letras para textos largos */
+  }
+
+ul li:hover a[data-text^="GitHub"]{
+    color:#fafafa;
+}
+
+
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Alinea el contenido al centro horizontalmente */
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19vw; /* Utiliza una unidad relativa para el tamaño de fuente */
+  color: rgba(0, 0, 0, 0.1);
+  border-radius: 20%;
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4vw; /* Utiliza una unidad relativa para el espaciado de letras */
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+
+ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 1vw; /* Utiliza una unidad relativa para el espaciado de letras */
+  width: 100vw; /* Ajusta el ancho al ancho de la ventana */
+  height: 100vw; /* Ajusta la altura al ancho de la ventana */
+}
+
+ul li:nth-child(6n + 1) a:before {
+  background: #1e82c5;
+}
+
+ul li:nth-child(6n + 2) a:before {
+  background: #0A66C2;
+}
+
+ul li:nth-child(6n + 3) a:before {
+  background: #1F2328;
+}
+
+ul li:nth-child(6n + 4) a:before {
+  background: #7D2AE7;
+}
+
+ul li:nth-child(6n + 5) a:before {
+  background: #fd7979;
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/* Media Query para Pantallas Pequeñas */
+@media screen and (max-width: 768px) {
+  ul li a {
+    font-size: 2em;
+    padding: 5px 10px;
+  }
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Alinea el contenido al centro horizontalmente */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19vw; /* Utiliza una unidad relativa para el tamaño de fuente */
+    color: rgba(0, 0, 0, 0.1);
+    border-radius: 20%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4vw; /* Utiliza una unidad relativa para el espaciado de letras */
+    transition: letter-spacing 0.5s, left 0.5s;
+   
+  }
+}

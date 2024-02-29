@@ -1,0 +1,146 @@
+/*Header Flex*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section[id] {
+  scroll-margin-top: 8vw;
+}
+
+.logo {
+  width: 40%;
+}
+
+.logo svg {
+  width: 20%;
+  margin-left: 10vw;
+}
+
+/*Nav Flex*/
+
+nav.menu {
+  width: 60%;
+}
+
+nav.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 10vw;
+}
+
+nav.menu ul li {
+  font-size: 1.5vw;
+}
+
+/*Perfil Flex*/
+
+.perfil .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10vw 10vw 1.95vw;
+}
+
+.perfil .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.perfil .content h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 1vw;
+}
+
+.perfil .content p {
+  font-size: 1vw;
+  line-height: 1.2vw;
+}
+
+.perfil ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 20%;
+}
+
+.perfil li {
+  padding-right: 1vw;
+  padding-top: 1vw;
+}
+
+.perfil .image {
+  width: 30%;
+  display: flex;
+  justify-content: right;
+}
+
+.perfil .image__perfil {
+  width: 80%;
+  border-radius: 30%;
+}
+
+.perfil svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+/*Sobre Mi Flex*/
+
+.sobreMi .content {
+  padding: 1.95vw 10vw;
+}
+
+.sobreMi .content h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 1vw;
+}
+
+.sobreMi .content p {
+  font-size: 1.5vw;
+  line-height: 2vw;
+  font-weight: 400;
+}
+
+/*Skills Flex*/
+
+.skills {
+  padding: 1.95vw 10vw;
+}
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 1.95vw;
+}
+
+/*Proyectos Flex*/
+
+.proyectos {
+  padding: 1.95vw 10vw;
+}

@@ -1,0 +1,244 @@
+:root {
+  --main-color: #001240;
+  --main-color-light: #063fce;
+  --background-color: #deebfc;
+  --semi-white: #fdfdfd;
+}
+
+/*Estilos generales*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--main-color);
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  text-wrap: balance;
+}
+
+header {
+  background-color: var(--background-color);
+}
+
+.logo svg {
+  color: var(--main-color);
+}
+
+.logo svg:hover {
+  color: var(--main-color-light);
+  transition: all 0.3s ease-in-out;
+}
+
+/*Estilos Nav*/
+
+nav.menu a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-color);
+  position: relative;
+}
+
+nav.menu a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color-light);
+  transform: translateX(-50%);
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+nav.menu a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+nav.menu a:hover {
+  color: var(--main-color-light);
+}
+
+/*Estilos para el menu responsive*/
+
+.perfil svg {
+  fill: var(--main-color);
+}
+
+.perfil li a:hover svg {
+  fill: var(--main-color-light);
+  transition: all 0.3s ease-in-out;
+}
+
+section.sobreMi {
+  background-color: var(--background-color);
+}
+
+/* Estilos para la tarjeta */
+
+.skill-card {
+  width: 13.28%;
+  height: 10vw;
+  perspective: 1000px;
+  padding-bottom: 5%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+/* Estilos para el contenido interno de la tarjeta */
+.skill-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.75s;
+}
+
+/* Estilos para la parte frontal de la tarjeta */
+.skill-front,
+.skill-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--semi-white);
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(63, 95, 175, 0.4);
+  color: var(--main-color);
+}
+
+/* Estilos para la parte posterior de la tarjeta */
+.skill-back {
+  transform: rotateY(180deg);
+}
+
+/* Estilos para la tarjeta cuando se realiza el volteo */
+.skill-card:hover .skill-inner {
+  transform: rotateY(180deg);
+}
+
+.skill-back a {
+  text-decoration: none;
+  color: var(--background-color);
+  background-color: var(--main-color);
+  border: var(--main-color) solid;
+  border-radius: 5px;
+  padding: 2%;
+  font-size: 1vw;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.skill-back a:hover {
+  border-color: var(--main-color-light);
+  background-color: var(--main-color-light);
+  color: var(--background-color);
+}
+
+.skill-back p {
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5vw;
+}
+
+.skill-front img {
+  width: 6vw;
+}
+
+/* Estilos para la seccion de proyectos */
+.proyectos {
+  background-color: var(--background-color);
+}
+
+/* Estilos para la animacion progress bar */
+body.chrome .progress {
+  height: 0.8vw;
+  background: blue;
+  width: 100%;
+  transform-origin: 0 50%;
+  animation: scaleProgress auto linear forwards,
+    colorChange auto linear forwards;
+  animation-timeline: scroll(root);
+  order: 1;
+}
+
+@keyframes scaleProgress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: var(--main-color);
+  }
+  50% {
+    background-color: var(--main-color-light);
+  }
+  100% {
+    background-color: var(--semi-white);
+  }
+}
+
+/* Estilos para la animacion de fondo*/
+
+.waves svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+@keyframes rotateScroll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(128deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.waves .out-top {
+  transform-origin: 13px 25px;
+  fill: var(--background-color);
+}
+.waves .in-top {
+  transform-origin: 13px 25px;
+  fill: var(--semi-white);
+}
+.waves .out-bottom {
+  transform-origin: 84px 93px;
+  fill: var(--background-color);
+}
+.waves .in-bottom {
+  transform-origin: 84px 93px;
+  fill: var(--semi-white);
+}
+
+.waves.chrome path {
+  animation: rotateScroll auto linear;
+  animation-timeline: scroll(root);
+}
+
+.waves:not(.chrome) path {
+  animation: rotate 40s linear infinite;
+}
