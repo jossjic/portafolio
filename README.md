@@ -1,5 +1,5 @@
 # José JIC Portfolio
-[Haz click aquí para ver la versión en español del repositorio](README_ES.md)
+[Haz click aquí para ver la versión en español de la documentación](README_ES.md)
 
 ![portfolio](gifs/portfolio.gif)
 
