@@ -4,8 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -52,17 +52,15 @@ ul li:hover a {
   background: transparent;
 }
 
-ul li a[data-text^="Portafolio"]:before,
-ul li a[data-text^="Contacto"]:before {
-    font-size: 14vw; /* Tamaño para textos largos */
-    letter-spacing: 2vw; /* Espaciado de letras para textos largos */
-  }
-
-ul li:hover a[data-text^="GitHub"]{
-    color:#fafafa;
+ul li a[data-text^="Portfolio"]:before,
+ul li a[data-text^="Contact"]:before {
+  font-size: 14vw; /* Tamaño para textos largos */
+  letter-spacing: 2vw; /* Espaciado de letras para textos largos */
 }
 
-
+ul li:hover a[data-text^="GitHub"] {
+  color: #fafafa;
+}
 
 ul li a:before {
   content: "";
@@ -98,30 +96,29 @@ ul li:nth-child(6n + 1) a:before {
 }
 
 ul li:nth-child(6n + 2) a:before {
-  background: #0A66C2;
+  background: #0a66c2;
 }
 
 ul li:nth-child(6n + 3) a:before {
-  background: #1F2328;
+  background: #1f2328;
 }
 
 ul li:nth-child(6n + 4) a:before {
-  background: #7D2AE7;
+  background: #7d2ae7;
 }
 
 ul li:nth-child(6n + 5) a:before {
   background: #fd7979;
 }
 
-
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 
 /* Media Query para Pantallas Pequeñas */
 @media screen and (max-width: 768px) {
@@ -147,6 +144,5 @@ ul li:nth-child(6n + 5) a:before {
     text-transform: uppercase;
     letter-spacing: 4vw; /* Utiliza una unidad relativa para el espaciado de letras */
     transition: letter-spacing 0.5s, left 0.5s;
-   
   }
 }
