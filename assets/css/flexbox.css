@@ -136,9 +136,12 @@ nav.menu ul li {
 .skills h2 {
   font-size: 2vw;
   font-weight: 700;
-  padding-bottom: 1.95vw;
+  padding-bottom: 1vw;
 }
 
+.skills p {
+  padding-bottom: 2vw;
+}
 /*Proyectos Flex*/
 
 .proyectos {

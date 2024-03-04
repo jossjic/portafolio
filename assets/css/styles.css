@@ -60,6 +60,33 @@ nav.menu a:hover::after {
 nav.menu a:hover {
   color: var(--main-color-light);
 }
+div.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.buttons img {
+  width: 2vw;
+  margin: 0 1vw;
+}
+
+div.buttons img:hover {
+  transform: scale(1.2);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+#dark-mode-button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+}
+
+#dark-mode-button img:hover {
+  rotate: 720deg;
+  transition: all 0.8s ease-in-out;
+}
 
 /*Estilos para el menu responsive*/
 
@@ -95,6 +122,10 @@ section.sobreMi {
   transition: transform 0.75s;
 }
 
+.skill-inner img {
+  width: 40%;
+}
+
 /* Estilos para la parte frontal de la tarjeta */
 .skill-front,
 .skill-back {
@@ -108,7 +139,7 @@ section.sobreMi {
   align-items: center;
   background-color: var(--semi-white);
   border-radius: 7px;
-  box-shadow: 0 4px 8px rgba(63, 95, 175, 0.4);
+  box-shadow: 0 5px 8px var(--background-color);
   color: var(--main-color);
 }
 
@@ -144,10 +175,6 @@ section.sobreMi {
   font-weight: bold;
   text-align: center;
   padding: 0.5vw;
-}
-
-.skill-front img {
-  width: 6vw;
 }
 
 /* Estilos para la seccion de proyectos */
@@ -241,4 +268,18 @@ body.chrome .progress {
 
 .waves:not(.chrome) path {
   animation: rotate 40s linear infinite;
+}
+
+/* Estilos para darkmode */
+#transition-effect {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 1;
 }
