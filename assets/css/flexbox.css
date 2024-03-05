@@ -94,7 +94,8 @@ nav.menu ul li {
 
 .perfil .image__perfil {
   width: 80%;
-  border-radius: 30%;
+  border-radius: 100%;
+  border: 0.2vw solid var(--main-color);
 }
 
 .perfil svg {
@@ -146,4 +147,104 @@ nav.menu ul li {
 
 .proyectos {
   padding: 1.95vw 10vw;
+}
+
+.proyectos .content h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 1vw;
+}
+
+.proyectos p {
+  font-size: 1.5vw;
+  line-height: 2vw;
+  font-weight: 400;
+}
+
+.proyectos .content p {
+  padding-bottom: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.proyect {
+  padding: 2.5vw;
+  margin: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2vw;
+}
+
+.proyect:nth-child(odd) {
+  margin-left: auto;
+  background-color: var(--main-color);
+  color: var(--background-color);
+}
+
+.proyect:nth-child(even) {
+  margin-right: auto;
+  /* Añade cualquier otro estilo que quieras para las tarjetas pares aquí */
+}
+
+.proyect-up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2vw;
+}
+
+div.proyect-up__info {
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+  padding-right: 2%;
+}
+
+.proyect-up__info h3 {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 1vw;
+}
+
+div.proyect-up__image {
+  width: 30%;
+  height: 100%;
+}
+
+.proyect-up__image img {
+  width: 100%;
+
+  border-radius: 5px;
+}
+
+.proyect-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.proyect-down__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+
+.proyect-down img {
+  width: 15%;
+}
+
+.proyect-down__date {
+  text-align: center;
+  width: 30%;
+}
+.proyect-down__date p {
+  text-align: center;
+  font-weight: 400;
 }

@@ -283,3 +283,9 @@ body.chrome .progress {
   pointer-events: none;
   z-index: 1;
 }
+
+/* Estilos para las tarjetas de proyecto */
+
+div.proyect {
+  background-color: var(--semi-white);
+}

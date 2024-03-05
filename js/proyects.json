@@ -1,0 +1,43 @@
+{
+  "proyectos": [
+    {
+      "titulo": "Expo Ingenierías",
+      "fecha": "Mayo 6, 2023",
+      "descripcion": "Expo Ingenierías es un proyecto que abarca 6 meses de desarrollo, dirigido a la creación de una página web completa (Frontend y Backend) diseñada para la administración de proyectos del Tecnológico de Monterrey.",
+      "tecnologias": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "link": "https://github.com/jossjic/ExpoIngenieria",
+      "ruta_imagen": "assets/images/expo.gif",
+      "title": "Engineering Expo",
+      "date": "May 6, 2023",
+      "description": "Engineering Expo is a project that spans 6 months of development, aimed at creating a complete website (Frontend and Backend) designed for the administration of projects of the Monterrey Institute of Technology.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "image_path": "assets/images/expo.gif"
+    },
+    {
+      "titulo": "RedQuiz",
+      "fecha": " Noviembre 30, 2023",
+      "descripcion": "RedQuiz es una aplicación de trivia diseñada para preparar a los voluntarios de la Cruz Roja sobre temas de salud. Ofrece trivia con categorías como signos vitales, anatomía, etc.",
+      "tecnologias": ["Swift", "Firebase", "Xcode"],
+      "link": "https://github.com/jossjic/redquizzios",
+      "ruta_imagen": "assets/images/expo.gif",
+      "title": "RedQuiz",
+      "date": "November 30, 2023",
+      "description": "RedQuiz is a trivia application designed to prepare Red Cross volunteers on health topics. It offers trivia with categories such as vital signs, anatomy, etc.",
+      "technologies": ["Swift", "Firebase", "Xcode"],
+      "image_path": "assets/images/expo.gif"
+    },
+    {
+      "titulo": "Roundabout",
+      "fecha": "Octubre 15, 2023",
+      "descripcion": "Roundabout es un proyecto de simulación interactiva que te permite explorar una rotonda virtual con varios elementos y activos, incluyendo vehículos, semáforos, edificios, y más.",
+      "tecnologias": ["Python", "Pygame", "Mesa", "OpenGL"],
+      "link": "https://github.com/jossjic/roundabout",
+      "ruta_imagen": "assets/images/expo.gif",
+      "title": "Roundabout",
+      "date": "October 15, 2023",
+      "description": "Roundabout is an interactive simulation project that allows you to explore a virtual roundabout with various elements and assets, including vehicles, traffic lights, buildings, and more.",
+      "technologies": ["Python", "Pygame", "Mesa", "OpenGL"],
+      "image_path": "assets/images/expo.gif"
+    }
+  ]
+}
