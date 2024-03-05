@@ -32,12 +32,12 @@
       "descripcion": "Roundabout es un proyecto de simulación interactiva que te permite explorar una rotonda virtual con varios elementos y activos, incluyendo vehículos, semáforos, edificios, y más.",
       "tecnologias": ["Python", "Pygame", "Mesa", "OpenGL"],
       "link": "https://github.com/jossjic/roundabout",
-      "ruta_imagen": "assets/images/expo.gif",
+      "ruta_imagen": "assets/images/roundabout.gif",
       "title": "Roundabout",
       "date": "October 15, 2023",
       "description": "Roundabout is an interactive simulation project that allows you to explore a virtual roundabout with various elements and assets, including vehicles, traffic lights, buildings, and more.",
       "technologies": ["Python", "Pygame", "Mesa", "OpenGL"],
-      "image_path": "assets/images/expo.gif"
+      "image_path": "assets/images/roundabout.gif"
     }
   ]
 }
