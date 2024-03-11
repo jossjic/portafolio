@@ -31,7 +31,7 @@ section[id] {
 /*Nav Flex*/
 
 nav.menu {
-  width: 60%;
+  width: 100%;
 }
 
 nav.menu ul {
@@ -43,7 +43,7 @@ nav.menu ul {
 }
 
 nav.menu ul li {
-  font-size: 1.5vw;
+  font-size: 120%;
 }
 
 /*Perfil Flex*/
@@ -63,13 +63,13 @@ nav.menu ul li {
 }
 
 .perfil .content h2 {
-  font-size: 2vw;
+  font-size: 150%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
 
 .perfil .content p {
-  font-size: 1vw;
+  font-size: 90%;
   line-height: 1.2vw;
 }
 
@@ -110,15 +110,29 @@ nav.menu ul li {
 }
 
 .sobreMi .content h2 {
-  font-size: 2vw;
+  font-size: 150%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
 
 .sobreMi .content p {
-  font-size: 1.5vw;
+  font-size: 120%;
   line-height: 2vw;
   font-weight: 400;
+}
+
+.listSobreMi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2vw;
+}
+
+.listSobreMi svg {
+  width: 100px;
+  height: 100px;
+  padding-right: 2vw;
+  color: var(--main-color);
 }
 
 /*Skills Flex*/
@@ -135,7 +149,7 @@ nav.menu ul li {
 }
 
 .skills h2 {
-  font-size: 2vw;
+  font-size: 150%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
@@ -150,13 +164,13 @@ nav.menu ul li {
 }
 
 .proyectos .content h2 {
-  font-size: 2vw;
+  font-size: 150%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
 
 .proyectos p {
-  font-size: 1.5vw;
+  font-size: 120%;
   line-height: 2vw;
   font-weight: 400;
 }
@@ -205,7 +219,7 @@ div.proyect-up__info {
 }
 
 .proyect-up__info h3 {
-  font-size: 2vw;
+  font-size: 150%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
@@ -216,9 +230,11 @@ div.proyect-up__image {
 }
 
 .proyect-up__image img {
-  width: 100%;
-
+  height: 8vh;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .proyect-down {
@@ -247,4 +263,105 @@ div.proyect-down__icons {
 .proyect-down__date p {
   text-align: center;
   font-weight: 400;
+}
+
+/*Bento Flex*/
+.hobbies {
+  padding: 1.95vw 10vw;
+  height: 80vh;
+}
+
+.hobbies h2 {
+  font-size: 150%;
+  font-weight: 700;
+  padding-bottom: 1vw;
+}
+
+.hobbies p {
+  font-size: 120%;
+  line-height: 2vw;
+  font-weight: 400;
+  margin-bottom: 1vw;
+}
+
+.bento {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 60vh;
+}
+
+.bentoItem {
+  margin: 0.8%;
+  position: relative;
+  width: 30%;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.bentoItem img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.bentoItem:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.4);
+}
+
+.bentoItem:hover {
+  z-index: 2;
+}
+
+.bentoItem .text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  text-align: center;
+  pointer-events: none;
+}
+
+.bentoItem:hover .text {
+  display: block;
+}
+
+.bento--item__1 {
+  width: calc(70% - 1.6%);
+  height: calc(40% - 1.6%);
+}
+
+.bento--item__2 {
+  width: calc(30% - 1.6%);
+  height: calc(40% - 1.6%);
+}
+
+.bento--item__3 {
+  width: calc(40% - 1.6%);
+  height: calc(20% - 1.6%);
+}
+
+.bento--item__4 {
+  width: calc(60% - 1.6%);
+  height: calc(20% - 1.6%);
+}
+
+.bento--item__5 {
+  width: calc(20% - 1.6%);
+  height: calc(40% - 1.6%);
+}
+
+.bento--item__6 {
+  width: calc(60% - 1.6%);
+  height: calc(40% - 1.6%);
+}
+
+.bento--item__7 {
+  width: calc(20% - 1.6%);
+  height: calc(40% - 1.6%);
 }

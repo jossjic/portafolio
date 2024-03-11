@@ -19,12 +19,12 @@
       "descripcion": "RedQuiz es una aplicación de trivia diseñada para preparar a los voluntarios de la Cruz Roja sobre temas de salud. Ofrece trivia con categorías como signos vitales, anatomía, etc.",
       "tecnologias": ["Swift", "Firebase", "Xcode"],
       "link": "https://github.com/jossjic/redquizzios",
-      "ruta_imagen": "assets/images/expo.gif",
+      "ruta_imagen": "assets/images/redquizz.png",
       "title": "RedQuiz",
       "date": "November 30, 2023",
       "description": "RedQuiz is a trivia application designed to prepare Red Cross volunteers on health topics. It offers trivia with categories such as vital signs, anatomy, etc.",
       "technologies": ["Swift", "Firebase", "Xcode"],
-      "image_path": "assets/images/expo.gif"
+      "image_path": "assets/images/redquizz.png"
     },
     {
       "titulo": "Roundabout",

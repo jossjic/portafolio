@@ -28,7 +28,6 @@ header {
   color: var(--main-color-light);
   transition: all 0.3s ease-in-out;
 }
-
 /*Estilos Nav*/
 
 nav.menu a {
@@ -288,4 +287,16 @@ body.chrome .progress {
 
 div.proyect {
   background-color: var(--semi-white);
+}
+
+/* Estilos para el bento*/
+
+.bentoItem {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+.bentoItem .text {
+  font-weight: bold;
+  color: white;
 }
