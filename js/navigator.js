@@ -86,27 +86,44 @@ document.addEventListener("DOMContentLoaded", function () {
   readJson();
   browserDetect();
 });
+let isAnimating = false;
 
 const applyRotation = () => {
   const cards = document.querySelectorAll(".proyect");
 
   cards.forEach((card) => {
     card.addEventListener("mousemove", (e) => {
-      e.preventDefault();
-      const rect = card.getBoundingClientRect();
-      const x = (rect.width / 2 - (e.clientX - rect.left)) / 10;
-      const y = -(rect.height / 2 - (e.clientY - rect.top)) / 5;
+      if (!isAnimating) {
+        e.preventDefault();
+        const rect = card.getBoundingClientRect();
+        const x = (rect.width / 2 - (e.clientX - rect.left)) / 25;
+        const y = -(rect.height / 2 - (e.clientY - rect.top)) / 10;
 
-      card.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+        card.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
 
-      const brightness = 1 - (2 * y) / rect.height;
-      card.style.filter = `brightness(${brightness})`;
+        const brightness = 1 - (5 * y) / rect.height;
+        card.style.filter = `brightness(${brightness})`;
+      }
     });
 
     card.addEventListener("mouseleave", (e) => {
+      isAnimating = true;
       e.preventDefault();
       card.style.transform = `rotateY(0deg) rotateX(0deg)`;
       card.style.filter = "brightness(1)";
+
+      // Usar una transición para la animación de regreso.
+      card.style.transition = "transform 0.2s, filter 0.2s";
+
+      // Eliminar la transición después de que se haya completado.
+      card.addEventListener(
+        "transitionend",
+        () => {
+          isAnimating = false;
+          card.style.transition = "";
+        },
+        { once: true }
+      );
     });
   });
 };
