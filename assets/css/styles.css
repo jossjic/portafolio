@@ -125,6 +125,13 @@ section.sobreMi {
   width: 40%;
 }
 
+.skill-inner p {
+  font-size: 80%;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5vw;
+}
+
 /* Estilos para la parte frontal de la tarjeta */
 .skill-front,
 .skill-back {

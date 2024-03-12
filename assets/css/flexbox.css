@@ -13,6 +13,7 @@ header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0.8vw;
 }
 
 section[id] {
@@ -20,30 +21,42 @@ section[id] {
 }
 
 .logo {
-  width: 40%;
+  width: 20%;
 }
 
 .logo svg {
   width: 20%;
-  margin-left: 10vw;
+  color: var(--main-color);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /*Nav Flex*/
 
 nav.menu {
-  width: 100%;
+  width: 60%;
 }
 
 nav.menu ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
-  padding-right: 10vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 nav.menu ul li {
-  font-size: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.4vw;
+  padding: 0 1vw 0 1vw;
+  text-align: center;
+}
+
+.container .buttons {
+  width: 20%;
 }
 
 /*Perfil Flex*/
@@ -63,13 +76,13 @@ nav.menu ul li {
 }
 
 .perfil .content h2 {
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
 
 .perfil .content p {
-  font-size: 90%;
+  font-size: 100%;
   line-height: 1.2vw;
 }
 
@@ -110,7 +123,7 @@ nav.menu ul li {
 }
 
 .sobreMi .content h2 {
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
@@ -123,7 +136,6 @@ nav.menu ul li {
 
 .listSobreMi {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-bottom: 2vw;
 }
@@ -149,14 +161,16 @@ nav.menu ul li {
 }
 
 .skills h2 {
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
 
 .skills p {
   padding-bottom: 2vw;
+  font-size: 120%;
 }
+
 /*Proyectos Flex*/
 
 .proyectos {
@@ -164,7 +178,7 @@ nav.menu ul li {
 }
 
 .proyectos .content h2 {
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
@@ -219,7 +233,7 @@ div.proyect-up__info {
 }
 
 .proyect-up__info h3 {
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
@@ -272,7 +286,7 @@ div.proyect-down__icons {
 }
 
 .hobbies h2 {
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 700;
   padding-bottom: 1vw;
 }
