@@ -1,6 +1,32 @@
 {
   "proyectos": [
     {
+      "titulo": "RedQuiz",
+      "fecha": " Noviembre 30, 2023",
+      "descripcion": "RedQuiz es una aplicación de trivia diseñada para preparar a los voluntarios de la Cruz Roja sobre temas de salud. Ofrece trivia con categorías como signos vitales, anatomía, etc.",
+      "tecnologias": ["Swift", "Firebase", "Xcode"],
+      "link": "https://github.com/jossjic/redquizzios",
+      "ruta_imagen": "assets/images/redquizz.gif",
+      "title": "RedQuiz",
+      "date": "November 30, 2023",
+      "description": "RedQuiz is a trivia application designed to prepare Red Cross volunteers on health topics. It offers trivia with categories such as vital signs, anatomy, etc.",
+      "technologies": ["Swift", "Firebase", "Xcode"],
+      "image_path": "assets/images/redquizz.gif"
+    },
+    {
+      "titulo": "Red OMI del Tec",
+      "fecha": "Junio, 2023",
+      "descripcion": "Este proyecto fue desarrollado con el objetivo de establecer una infraestructura de red robusta capaz de soportar la Olimpiada Mexicana de Informática del Tecnológico de Monterrey.",
+      "tecnologias": ["Packet", "CiscoIOS"],
+      "link": "https://github.com/jossjic/interconexionDispositivosTec",
+      "ruta_imagen": "assets/images/pkt.gif",
+      "title": "OMI Tec Network",
+      "date": "June, 2023",
+      "description": "This project was developed with the objective of establishing a robust network infrastructure capable of supporting the Mexican Informatics Olympiad of the Monterrey Institute of Technology.",
+      "technologies": ["Packet", "CiscoIOS"],
+      "image_path": "assets/images/pkt.gif"
+    },
+    {
       "titulo": "Expo Ingenierías",
       "fecha": "Mayo 6, 2023",
       "descripcion": "Expo Ingenierías es un proyecto que abarca 6 meses de desarrollo, dirigido a la creación de una página web completa (Frontend y Backend) diseñada para la administración de proyectos del Tecnológico de Monterrey.",
@@ -12,19 +38,6 @@
       "description": "Engineering Expo is a project that spans 6 months of development, aimed at creating a complete website (Frontend and Backend) designed for the administration of projects of the Monterrey Institute of Technology.",
       "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       "image_path": "assets/images/expo.gif"
-    },
-    {
-      "titulo": "RedQuiz",
-      "fecha": " Noviembre 30, 2023",
-      "descripcion": "RedQuiz es una aplicación de trivia diseñada para preparar a los voluntarios de la Cruz Roja sobre temas de salud. Ofrece trivia con categorías como signos vitales, anatomía, etc.",
-      "tecnologias": ["Swift", "Firebase", "Xcode"],
-      "link": "https://github.com/jossjic/redquizzios",
-      "ruta_imagen": "assets/images/redquizz.png",
-      "title": "RedQuiz",
-      "date": "November 30, 2023",
-      "description": "RedQuiz is a trivia application designed to prepare Red Cross volunteers on health topics. It offers trivia with categories such as vital signs, anatomy, etc.",
-      "technologies": ["Swift", "Firebase", "Xcode"],
-      "image_path": "assets/images/redquizz.png"
     },
     {
       "titulo": "Roundabout",
