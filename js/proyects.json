@@ -17,13 +17,13 @@
       "titulo": "Red OMI del Tec",
       "fecha": "Junio, 2023",
       "descripcion": "Este proyecto fue desarrollado con el objetivo de establecer una infraestructura de red robusta capaz de soportar la Olimpiada Mexicana de Informática del Tecnológico de Monterrey.",
-      "tecnologias": ["packet", "ciscoIOS"],
+      "tecnologias": ["packet", "ciscoios"],
       "link": "https://github.com/jossjic/interconexionDispositivosTec",
       "ruta_imagen": "assets/images/pkt.gif",
       "title": "OMI Tec Network",
       "date": "June, 2023",
       "description": "This project was developed with the objective of establishing a robust network infrastructure capable of supporting the Mexican Informatics Olympiad of the Monterrey Institute of Technology.",
-      "technologies": ["packet", "ciscoIOS"],
+      "technologies": ["packet", "ciscoios"],
       "image_path": "assets/images/pkt.gif"
     },
     {
