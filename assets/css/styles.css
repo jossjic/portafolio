@@ -59,16 +59,6 @@ nav.menu a:hover::after {
 nav.menu a:hover {
   color: var(--main-color-light);
 }
-div.buttons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-div.buttons img {
-  width: 2vw;
-  margin: 0 1vw;
-}
 
 div.buttons img:hover {
   transform: scale(1.2);
@@ -103,15 +93,6 @@ section.sobreMi {
 }
 
 /* Estilos para la tarjeta */
-
-.skill-card {
-  width: 13.28%;
-  height: 10vw;
-  perspective: 1000px;
-  padding-bottom: 5%;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-}
 
 /* Estilos para el contenido interno de la tarjeta */
 .skill-inner {
@@ -237,7 +218,7 @@ body.chrome .progress {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(128deg);
+    transform: rotate(720deg);
   }
 }
 
@@ -306,4 +287,9 @@ div.proyect {
 .bentoItem .text {
   font-weight: bold;
   color: white;
+}
+
+iframe {
+  border: none;
+  background: none;
 }

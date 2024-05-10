@@ -32,6 +32,23 @@ section[id] {
   display: block;
 }
 
+div.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.buttons img {
+  width: 2vw;
+  margin: 0 1vw;
+}
+
+div.buttons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*Nav Flex*/
 
 nav.menu {
@@ -158,6 +175,15 @@ nav.menu ul li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.skill-card {
+  width: 13.28%;
+  height: 10vw;
+  perspective: 1000px;
+  padding-bottom: 5%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
 }
 
 .skills h2 {
@@ -378,4 +404,364 @@ div.proyect-down__icons {
 .bento--item__7 {
   width: calc(20% - 1.6%);
   height: calc(40% - 1.6%);
+}
+
+/*certificados flex*/
+
+.certificados {
+  padding: 1.95vw 10vw;
+}
+
+.certificados h2 {
+  font-size: 200%;
+  font-weight: 700;
+  padding-bottom: 1vw;
+}
+
+.certificados p {
+  font-size: 120%;
+  line-height: 2vw;
+  font-weight: 400;
+  margin-bottom: 1vw;
+}
+
+.certificado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2.5vw;
+  margin: 0 10vw;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2vw;
+}
+
+/*Styles for mobile devices*/
+
+@media (max-width: 950px) {
+  section[id] {
+    scroll-margin-top: 10vh;
+  }
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+  }
+
+  nav.menu {
+    width: 100%;
+  }
+
+  nav.menu ul li {
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 0 1vw 0 1vw;
+    text-align: center;
+  }
+
+  .logo {
+    height: 70%;
+  }
+
+  .logo svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .buttons {
+    position: fixed;
+    div.buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    div.buttons img {
+      width: 2vw;
+      margin: 0 1vw;
+    }
+    top: 1vh;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .container .buttons {
+    width: 30%;
+  }
+
+  div.buttons img {
+    width: 5vw;
+  }
+
+  .perfil .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11vh 0.5vh;
+  }
+
+  .perfil .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .perfil .content h2 {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+    padding-bottom: 15vh;
+  }
+
+  .perfil .content p {
+    font-size: 4vw;
+    line-height: 1.2vw;
+    line-height: 2vh;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .perfil ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: initial;
+    width: 100%;
+    height: 5vh;
+  }
+
+  .perfil li {
+    padding-right: 1vw;
+    padding-top: 1vw;
+    width: 33%;
+    height: 100%;
+  }
+
+  .perfil a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .perfil .image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 23vh;
+  }
+
+  .perfil .image__perfil {
+    width: 80%;
+    border-radius: 100%;
+    border: 0.2vw solid var(--main-color);
+  }
+
+  .perfil svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sobreMi .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sobreMi .content p {
+    font-size: 4vw;
+    line-height: 2.5vh;
+  }
+
+  .listSobreMi {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2vh;
+  }
+
+  .listSobreMi svg {
+    width: 20vh;
+    height: 20vh;
+    padding-right: 2vw;
+    color: var(--main-color);
+  }
+
+  .skills {
+    padding: 1.95vw 1.95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills h2 {
+    padding-bottom: 2vh;
+  }
+
+  .skills p {
+    padding-bottom: 2vh;
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 90%;
+  }
+
+  .skill-card {
+    width: 30%;
+    height: 8vh;
+    perspective: 1000px;
+    padding-bottom: 5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+
+  .proyectos {
+    padding: 1.95vw 1.95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proyectos .content h2 {
+    padding-bottom: 2vh;
+    text-align: center;
+  }
+
+  .proyectos p {
+    font-size: 4vw;
+    line-height: 2.5vh;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .proyect {
+    padding: 2.5vh;
+    margin: 0 1.95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2vh;
+  }
+
+  .proyect-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2vh;
+  }
+  .proyect-up__info {
+    padding-right: 0 !important;
+  }
+
+  .proyect-up__info h3 {
+    padding-bottom: 2vh;
+    text-align: center;
+  }
+
+  .proyect-up__info p {
+    font-size: 4vw;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .proyect-up__image {
+    padding-bottom: 2vh;
+    width: 100% !important;
+  }
+
+  .proyect-up__image img {
+    width: 100%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .proyect:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .proyect:nth-child(even) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .hobbies {
+    padding: 1.95vw 1.95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hobbies h2 {
+    padding-bottom: 2vh;
+    text-align: center;
+  }
+
+  .hobbies p {
+    font-size: 4vw;
+    line-height: 2.5vh;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .bentoItem {
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .certificados {
+    padding: 1.95vw 1.95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .certificadosBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 90%;
+  }
+
+  .certificados h2 {
+    padding-bottom: 2vh;
+    text-align: center;
+  }
+
+  .certificados p {
+    font-size: 4vw;
+    line-height: 2.5vh;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .certificado {
+    width: 90%;
+  }
 }
