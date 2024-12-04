@@ -323,48 +323,27 @@
             </div>
 
             <div class="certificadosBox">
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificado_cloudPracticioner.png" alt="Certificado AWS Cloud Practitioner">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificado_desarrollo.png" alt="Certificado en Desarrollo de Aplicaciones">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificado_front.png" alt="Certificado en Desarrollo Frontend">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificado_dsd1_1.png" alt="Certificado en Desarrollo de Software 1 - Parte 1">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificado_dsd1_2.png" alt="Certificado en Desarrollo de Software 1 - Parte 2">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificado_english.png" alt="Certificado de Inglés">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificado_meritoAcademico1.png" alt="Certificado de Mérito Académico 1">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificado_meritoAcademico2.png" alt="Certificado de Mérito Académico 2">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificate_AWS Compute Services overview-1.png" alt="Certificado AWS Compute Services Overview">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificate_AWS Storage Path-1.png" alt="Certificado AWS Storage Path">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificate_AWS Technical Essentials-1.png" alt="Certificado AWS Technical Essentials">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificate_ebs path-1.png" alt="Certificado EBS Path">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificate_Getting Started with Amazon Simple Storage Service-1.png" alt="Certificado Getting Started with Amazon Simple Storage Service">
-                </div>
-                <div class="certificado">
-                    <img src="./assets/images/certificados/certificate_Introduction to AWS IAM-1.png" alt="Certificado Introduction to AWS IAM">
-                </div>
+                <script>
+                    const certificados = [
+                        {src: "./assets/images/certificados/AWS Certified Solutions Architect - Associate-1.png", alt: "AWS Certified Solutions Architect - Associate Certificate" },
+                        {src: "./assets/images/certificados/AWS Certified Solutions Architect - Associate-2.png", alt: "AWS Certified Solutions Architect - Associate Certificate" },
+                        { src: "./assets/images/certificados/certificado_desarrollo.png", alt: "Application Development Certificate" },
+                        { src: "./assets/images/certificados/certificado_front.png", alt: "Frontend Development Certificate" },
+                        { src: "./assets/images/certificados/certificado_dsd1_1.png", alt: "Software Development 1 Certificate - Part 1" },
+                        { src: "./assets/images/certificados/certificado_dsd1_2.png", alt: "Software Development 1 Certificate - Part 2" },
+                        { src: "./assets/images/certificados/certificado_english.png", alt: "English Certificate" },
+                        { src: "./assets/images/certificados/certificado_meritoAcademico1.png", alt: "Academic Merit Certificate 1" },
+                        { src: "./assets/images/certificados/certificado_meritoAcademico2.png", alt: "Academic Merit Certificate 2" },
+                    ];
+
+                    certificados.forEach(certificado => {
+                        document.write(`
+                            <div class="certificado">
+                                <img src="${certificado.src}" alt="${certificado.alt}">
+                            </div>
+                        `);
+                    });
+                </script>
             </div>
             
         </section>
