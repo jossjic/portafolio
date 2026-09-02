@@ -743,7 +743,7 @@ div.proyect-down__icons {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: 50vh;
     width: 90%;
   }
 
