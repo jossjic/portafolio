@@ -772,3 +772,20 @@ iframe {
   outline: 3px solid var(--background-color);
   outline-offset: 2px;
 }
+
+/* Asegurar que el footer esté al final */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Espacio adicional después de la sección de certificados */
+.certificados {
+  margin-bottom: 0;
+  padding-bottom: 4rem;
+}
